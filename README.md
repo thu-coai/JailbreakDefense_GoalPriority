@@ -2,7 +2,7 @@
 
 ![Alt text](imgs/method.png)
 
-This is the codebase for our paper [Defending Large Language Models Against Jailbreaking Attacks Through Goal Prioritization](https://arxiv.org/abs/2311.09096)
+This is the codebase for our paper [Defending Large Language Models Against Jailbreaking Attacks Through Goal Prioritization](https://arxiv.org/abs/2311.09096), which has been accepted by ACL 2024 Main Conference.
 
 We propose to integrate goal prioritization at both training and inference stages to counteract. Implementing goal prioritization during inference substantially diminishes the Attack Success Rate (ASR) of jailbreaking from 66.4% to 3.6% for ChatGPT. And integrating goal prioritization into model training reduces the ASR from 71.0% to 6.6% for Llama2-13B. Remarkably, even in scenarios where no jailbreaking samples are included during training, our approach slashes the ASR by half.
 
@@ -41,7 +41,7 @@ these jailbreaking prompts and questions leads to a total of 50 × 20 = 1000 tes
 The jailbreaking prompts and harmful questions are listed in `data/test`.
 
 ### Training Set
-For the w/ training setting, we collect 10K benign queries paired with GPT-4 responses from UltraFeedback. Moreover, 500 harmful instructions from AdvBench are randomly paired with Jailbreaking prompts from Liu et al. (2023).
+For the w/ training setting, we collect 10K benign queries paired with GPT-4 responses from UltraFeedback. Moreover, 500 harmful instructions from AdvBench are randomly paired with Jailbreaking prompts from [paper](https://arxiv.org/abs/2305.13860).
 
 The aforementioned data are listed in `data/`.
 
